@@ -1,0 +1,15 @@
+.about .img-box::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 70%;
+    height: 160%;
+    background-color: var(--second-brand-color);
+    top: -30%;
+    left: -1.5rem;
+}
+@media screen and (min-width: 1024px)  {
+    .about .img-box::before {
+        left: -10rem;
+    }
+}

@@ -1,0 +1,37 @@
+.section{
+  padding: 15rem 0;
+  text-align: center;
+}
+.img-box, .block {
+  position: relative;
+}
+.hero .img-box::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 70%;
+  height: 160%;
+  background-color: var(--first-brand-color);
+  top: -30%;
+  right: -1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .section {
+    padding: 25rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero, .info {
+    flex-direction: row-reverse;
+  }
+  .hero .img-box, .info .img-box {
+    margin-left: 3rem;
+  }
+  .about .img-box, .bottom .img-box {
+    margin-right: 3rem;
+  }
+  .hero .img-box::before{
+    right: -10rem;
+  }
+}

@@ -1,0 +1,16 @@
+.info .img-box::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 70%;
+  height: 160%;
+  background-color: var(--third-brand-color);
+  top: -30%;
+  right: -1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .info .img-box::before {
+    right: -10rem;
+  }
+
+}
